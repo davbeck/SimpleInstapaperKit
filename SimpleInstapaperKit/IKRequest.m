@@ -74,10 +74,10 @@
 	}
 	NSMutableDictionary *allParameters = [parameters mutableCopy];
 	
-	if (allParameters[IKRequestUsernameParameter] == nil) {
+	if (allParameters[IKRequestUsernameParameter] == nil && [self username] != nil) {
 		allParameters[IKRequestUsernameParameter] = [self username];
 	}
-	if (allParameters[IKRequestPasswordParameter] == nil) {
+	if (allParameters[IKRequestPasswordParameter] == nil && [self password] != nil) {
 		allParameters[IKRequestPasswordParameter] = [self password];
 	}
 	
