@@ -100,6 +100,10 @@
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
 	
 	UIViewController *rootViewController = [[UIApplication sharedApplication].delegate window].rootViewController;
+	while ([rootViewController presentedViewController] != nil) {
+		rootViewController = [rootViewController presentedViewController];
+	}
+	
 	[rootViewController presentViewController:navigationController animated:YES completion:nil];
 }
 
