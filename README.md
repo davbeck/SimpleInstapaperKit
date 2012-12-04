@@ -26,6 +26,8 @@
 
 ### IKInstapaperActivity
 
+![Login Screenshot](http://f.cl.ly/items/290j3a1S1P3t0n1X210J/iOS%20Simulator%20Screen%20shot%20Dec%203,%202012%208.26.03%20PM.png "Login")
+
 `IKInstapaperActivity` is a `UIActivity` subclass for use in `UIActivityViewController`. It will add any `NSURL`s in the activity items array to the user's Instapaper list.
 
 ```objectivec
@@ -37,6 +39,8 @@ UIActivityViewController *activityViewController = [[UIActivityViewController al
 Note that you can include the activity in any UIActivityViewController and it will only be shown to the user if there is a URL in the activity items. It will also only show up if the user is logged in or the Instapaper app is installed on the device. If adding the URL fails because of a authentication problem, the `IKLoginViewController` will be shown and the URL will try to be re-added.
 
 ### IKLoginViewController
+
+![Login Screenshot](http://f.cl.ly/items/2E2a2i051N2b202L1w1O/iOS%20Simulator%20Screen%20shot%20Dec%203,%202012%208.27.32%20PM.png "Login")
 
 `IKLoginViewController` is a `UIViewController` that manages getting the user's username and password, checking the API for successful login, and then saving credentials.
 
