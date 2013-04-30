@@ -9,8 +9,15 @@
 
 ## Installation
 
-- Add the `SimpleInstapaperKit` subfolder to your project.
-- Link your target to `Security` and `QuartzCore` frameworks.
+### [CocoaPods](http://cocoapods.org)
+
+    pod 'SimpleInstapaperKit'
+
+### Manual
+
+1. Add the `SimpleInstapaperKit` subfolder to your project.
+2. Add [UICKeyChainStore](https://github.com/kishikawakatsumi/UICKeyChainStore) to your project.
+3. Link your target to `Security` and `QuartzCore` frameworks.
 
 ## Usage
 
