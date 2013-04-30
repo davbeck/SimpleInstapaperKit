@@ -30,7 +30,7 @@
 
 #import "IKRequest.h"
 
-#import "SFHFKeychainUtils.h"
+#import "UICKeyChainStore.h"
 
 
 #define IKInstapaperKeychainServiceName @"Instapaper"
@@ -64,7 +64,7 @@
 {
 	[self requestForAuthenticationWithParameters:@{IKRequestUsernameParameter : username, IKRequestPasswordParameter : password} completed:^(BOOL success, NSInteger statusCode) {
 		if (success) {
-			[SFHFKeychainUtils storeUsername:username andPassword:password forServiceName:IKInstapaperKeychainServiceName updateExisting:YES error:nil];
+            [UICKeyChainStore setString:password forKey:username service:IKInstapaperKeychainServiceName];
 			[[NSUserDefaults standardUserDefaults] setObject:username forKey:IKInstapaperUsernamePreferenceKey];
 		}
 		
@@ -81,7 +81,7 @@
 
 + (NSString *)password
 {
-	return [SFHFKeychainUtils getPasswordForUsername:[self username] andServiceName:IKInstapaperKeychainServiceName error:NULL];
+    return [UICKeyChainStore stringForKey:[self username] service:IKInstapaperKeychainServiceName];
 }
 
 + (BOOL)loggedIn

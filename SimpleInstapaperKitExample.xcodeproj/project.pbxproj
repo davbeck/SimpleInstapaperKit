@@ -15,6 +15,7 @@
 		113E87DA166D9F7400B10C13 /* InstapaperActivity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 113E87D6166D9F7300B10C13 /* InstapaperActivity@2x.png */; };
 		113E87DB166D9F7400B10C13 /* InstapaperActivity~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 113E87D7166D9F7300B10C13 /* InstapaperActivity~ipad.png */; };
 		113E87DC166D9F7400B10C13 /* InstapaperActivity.png in Resources */ = {isa = PBXBuildFile; fileRef = 113E87D8166D9F7400B10C13 /* InstapaperActivity.png */; };
+		114FF97117303C1F00C09716 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 114FF97017303C1F00C09716 /* UICKeyChainStore.m */; };
 		1152EE3B166D497F000F5538 /* IKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1152EE39166D497F000F5538 /* IKLoginViewController.m */; };
 		1152EE3C166D497F000F5538 /* IKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1152EE3A166D497F000F5538 /* IKLoginViewController.xib */; };
 		11DC6858166D0F7900C3FF37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DC6857166D0F7900C3FF37 /* UIKit.framework */; };
@@ -30,7 +31,6 @@
 		11DC6874166D0F7900C3FF37 /* IKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC6873166D0F7900C3FF37 /* IKViewController.m */; };
 		11DC688B166D12D700C3FF37 /* IKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC688A166D12D700C3FF37 /* IKRequest.m */; };
 		11DC688D166D134B00C3FF37 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DC688C166D134B00C3FF37 /* Security.framework */; };
-		11DC6890166D13B400C3FF37 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DC688F166D13B400C3FF37 /* SFHFKeychainUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +43,8 @@
 		113E87D6166D9F7300B10C13 /* InstapaperActivity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InstapaperActivity@2x.png"; sourceTree = "<group>"; };
 		113E87D7166D9F7300B10C13 /* InstapaperActivity~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InstapaperActivity~ipad.png"; sourceTree = "<group>"; };
 		113E87D8166D9F7400B10C13 /* InstapaperActivity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstapaperActivity.png; sourceTree = "<group>"; };
+		114FF96F17303C1F00C09716 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = UICKeyChainStore/Lib/UICKeyChainStore.h; sourceTree = "<group>"; };
+		114FF97017303C1F00C09716 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = UICKeyChainStore/Lib/UICKeyChainStore.m; sourceTree = "<group>"; };
 		1152EE38166D497F000F5538 /* IKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKLoginViewController.h; sourceTree = "<group>"; };
 		1152EE39166D497F000F5538 /* IKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKLoginViewController.m; sourceTree = "<group>"; };
 		1152EE3A166D497F000F5538 /* IKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IKLoginViewController.xib; sourceTree = "<group>"; };
@@ -66,8 +68,6 @@
 		11DC6889166D12D700C3FF37 /* IKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IKRequest.h; sourceTree = "<group>"; };
 		11DC688A166D12D700C3FF37 /* IKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IKRequest.m; sourceTree = "<group>"; };
 		11DC688C166D134B00C3FF37 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		11DC688E166D13B400C3FF37 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
-		11DC688F166D13B400C3FF37 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +124,8 @@
 				11DC686F166D0F7900C3FF37 /* MainStoryboard.storyboard */,
 				11DC6872166D0F7900C3FF37 /* IKViewController.h */,
 				11DC6873166D0F7900C3FF37 /* IKViewController.m */,
+				114FF96F17303C1F00C09716 /* UICKeyChainStore.h */,
+				114FF97017303C1F00C09716 /* UICKeyChainStore.m */,
 				11DC685E166D0F7900C3FF37 /* Supporting Files */,
 			);
 			path = SimpleInstapaperKitExample;
@@ -160,8 +162,6 @@
 				1152EE3A166D497F000F5538 /* IKLoginViewController.xib */,
 				113E87D0166D66E700B10C13 /* InstapaperLogin.png */,
 				113E87CB166D5B2500B10C13 /* InstapaperLogin@2x.png */,
-				11DC688E166D13B400C3FF37 /* SFHFKeychainUtils.h */,
-				11DC688F166D13B400C3FF37 /* SFHFKeychainUtils.m */,
 			);
 			path = SimpleInstapaperKit;
 			sourceTree = "<group>";
@@ -244,9 +244,9 @@
 				11DC6868166D0F7900C3FF37 /* IKAppDelegate.m in Sources */,
 				11DC6874166D0F7900C3FF37 /* IKViewController.m in Sources */,
 				11DC688B166D12D700C3FF37 /* IKRequest.m in Sources */,
-				11DC6890166D13B400C3FF37 /* SFHFKeychainUtils.m in Sources */,
 				1152EE3B166D497F000F5538 /* IKLoginViewController.m in Sources */,
 				113E87D4166D9DAF00B10C13 /* IKInstapaperActivity.m in Sources */,
+				114FF97117303C1F00C09716 /* UICKeyChainStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
